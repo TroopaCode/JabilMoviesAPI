@@ -1,0 +1,6 @@
+@JabilMoviesAPI_HostAddress = http://localhost:5072
+
+GET {{JabilMoviesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
