@@ -18,7 +18,7 @@ namespace JabilMoviesAPI.Services
         }
         public async Task<IEnumerable<DirectorDTO>> GetAll()
         {
-            var directors = await _context.Movies.ToListAsync();
+            var directors = await _context.Directors.ToListAsync();
             return _mapper.Map<IEnumerable<DirectorDTO>>(directors);
         }
 

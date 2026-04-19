@@ -44,7 +44,7 @@ namespace JabilMoviesAPI.Controllers
 
         [HttpPut]
         [Route("{id}")] 
-        public async Task<ActionResult<MoviesDTO>> Update(int id, MoviesUpdateDTO moviesDTO)
+        public async Task<ActionResult<MoviesDTO>> Update(int id, [FromBody] MoviesUpdateDTO moviesDTO)
         {
             var updatedMoviesDTO = await _moviesService.Update(id, moviesDTO); 
             if (updatedMoviesDTO == null)
